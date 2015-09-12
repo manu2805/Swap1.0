@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="120" id="KGk-i7-Jjw" customClass="ImageTableViewCell" customModule="Layer_Parse_iOS_Swift_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uet-vm-m3B">
+                        <rect key="frame" x="115" y="65" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="i4K-Nu-FSw"/>
+                            <constraint firstAttribute="width" constant="100" id="yyT-Ty-F0d"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oX-WF-rrg">
+                        <rect key="frame" x="149" y="188" width="32" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="1oX-WF-rrg" secondAttribute="centerX" id="ddC-bN-Fb7"/>
+                    <constraint firstAttribute="centerX" secondItem="uet-vm-m3B" secondAttribute="centerX" id="j8j-Yg-FfT"/>
+                    <constraint firstAttribute="centerY" secondItem="uet-vm-m3B" secondAttribute="centerY" id="omZ-EL-mz4"/>
+                    <constraint firstItem="1oX-WF-rrg" firstAttribute="top" secondItem="uet-vm-m3B" secondAttribute="bottom" constant="23" id="pCC-rR-477"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageTitle" destination="1oX-WF-rrg" id="2YC-jI-MFV"/>
+                <outlet property="itemImage" destination="uet-vm-m3B" id="VUa-t0-IQU"/>
+            </connections>
+            <point key="canvasLocation" x="285" y="473.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TestImage.jpg" width="153" height="153"/>
+    </resources>
+</document>

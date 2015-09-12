@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.5.0"
+  },
+  "applications": {
+    "LayerTest": {
+      "applicationId": "Jp35uSKgscg15YsWLnwzSutESKrMoRomca2EfQbF",
+      "masterKey": "wbcV2JePun7DH6tz47KuHPcZ8oJHNiJg3WqROylp"
+    },
+    "_default": {
+      "link": "LayerTest"
+    }
+  }
+}
